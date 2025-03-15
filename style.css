@@ -1,0 +1,180 @@
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Poppins', sans-serif;
+}
+
+body {
+background: url('imag.jpg') no-repeat center center/cover;
+color: #0DF7FF;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+height: 100vh;
+padding: 20px;
+}
+
+.navbar {
+width: 100%;
+background: rgba(255, 255, 255, 0.1);
+padding: 15px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+backdrop-filter: blur(10px);
+border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.navbar .logo {
+font-size: 22px;
+font-weight: bold;
+color: white;
+}
+
+.navbar .nav-links {
+display: flex;
+gap: 20px;
+}
+
+.navbar a {
+text-decoration: none;
+color: white;
+font-weight: 500;
+transition: 0.3s;
+}
+
+.navbar a:hover {
+color: #00D4FF;
+}
+
+
+a[href*="logout"] {
+background: #162938;
+color: #fff;
+padding: 8px 15px;
+margin-bottom: 20px;
+border-radius: 5px;
+text-decoration: none;
+font-weight: bold;
+transition: 0.3s;
+}
+
+a[href*="logout"]:hover {
+background: #D90202;
+}
+
+
+.container {
+background: rgba(255, 255, 255, 0.15);
+padding: 30px;
+border-radius: 12px;
+text-align: center;
+box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+width: 100%;
+max-width: 450px;
+backdrop-filter: blur(20px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+}
+ 
+  
+h1 {
+font-size: 24px;
+margin-bottom: 15px;
+color: #162938;
+}
+
+ 
+input[type="url"] {
+width: 100%;
+padding: 12px 5px;
+border: none;
+border-radius: 8px;
+font-size: 16px;
+outline: none;
+text-align: center;
+background: rgba(255, 255, 255, 0.5);
+border: 1px solid rgba(255, 255, 255, 0.3);
+color: blue;
+}
+
+button {
+padding: 12px;
+border: none;
+background:#162938;
+color: white;
+font-size: 18px;
+font-weight: bold;
+border-radius: 8px:;
+cursor: pointer;
+transition: 0.3s;
+}
+
+button:hover {
+background: white;
+color: #162938;
+}
+
+
+#toggle-stats {
+margin-top: 20px;
+background: #162938;
+}
+
+#toggle-stats:hover {
+background: white;
+}
+
+ 
+#stats-container {
+margin-top: 20px;
+width: 100%;
+max-width: 450px;
+padding: 20px;
+border-radius: 12px;
+background: rgba(255, 255, 255, 0.2);
+backdrop-filter: blur(10px);
+display: none;
+border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+ 
+#shorten-list {
+margin-top: 15px;
+text-align: left;
+}
+
+#shorten-list a {
+display: block;
+color: ##00D4FF;
+text-decoration: none;
+font-weight: bold;
+margin-top: 8px;
+transition: 0.3s;
+}
+
+#shorten-list a:hover {
+color: #00A3CC;
+}
+
+ 
+@media (max-width: 600px) {
+.container {
+width: 90%;
+padding: 20px;
+}
+
+input[type="url"] {
+font-size: 14px;
+}
+
+button {
+font-size: 16px;
+}
+
+h1 {
+font-size: 20px;
+}
+}
